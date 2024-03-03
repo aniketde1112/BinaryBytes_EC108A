@@ -53,13 +53,14 @@ body {
 }
 
 .menu {
+  
   margin-top: 40px;
   width: 400px;
   float: left;
   height: 70px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+ 
+ 
+  
 }
 
 ul {
