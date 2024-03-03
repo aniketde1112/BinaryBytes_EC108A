@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOT Newsletter Signup</title>
+  <style>
+    body {
+      background-color: rgb(190, 149, 201);
+      background-image: url(images/aotcampus4.jpg);
+      background-size: 100%;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 5em;
+      margin-bottom: 20px;
+      margin-left: -830px;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: -850px;
+      gap: 10px; /* Space between elements */
+    }
+
+    
+    .par{
+        text-align: center;
+        margin-left: -820px;
+        font-family: cursive;
+        font-size: 2em;
+    }
+
+    
+
+    .text-box {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 250px;
+      margin-left: 20px;
+    }
+
+    .submit-button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 50px; /* Round button */
+      cursor: pointer; /* Change cursor on hover */
+      margin-left: 20px;
+      src: url(thanks.html);
+    }
+
+    .submit-button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+  </style>
+  <script>
+    function submitForm() {
+      // Optional: Add form validation here (check for empty fields, valid email format, etc.)
+
+      // Prevent default form submission behavior
+      event.preventDefault();
+
+      // Redirect to confirmation page on successful submission (replace with your actual file name)
+      window.location.href = src(thanks.html);
+    }
+  </script>
+</head>
+<body>
+  <h1 class="heading">AOT Newsletter</h1>
+  <p class = "par">Wanna Sign Up Tech Enthusiants?</p>
+  <form class="form-container" action="#" method="post">
+    <label for="name">Enter Name</label>
+    <input type="text" class="text-box" id="name" name="name" required>
+
+    <label for="email">Enter Email ID</label>
+    <input type="email" class="text-box" id="email" name="email" required>
+
+    <label for="stream">Enter Stream</label>
+    <input type="text" class="text-box" id="stream" name="stream" required>
+
+    <label for="year">Enter Year</label>
+    <input type="number" class="text-box" id="year" name="year" min="1" max="4" required>
+
+    <button type="submit" class="submit-button">Subscribe</button>
+  </form>
+</body>
+</html>
