@@ -74,7 +74,8 @@ ul a {
 }
 
 ul a.active {
-  background: #2bb6f6;
+  background: #71c9f2;
+  color: #000;
 }
 ul a:hover {
   background: #71c9f2;
@@ -82,10 +83,11 @@ ul a:hover {
 }
 ul a:active {
   background: #71c9f2c3;
-  color: black;
+  
 }
 ul:hover > a:not(:hover) {
   background: none;
+  color: white;
 }
 
 .search {
