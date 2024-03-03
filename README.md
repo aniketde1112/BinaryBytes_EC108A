@@ -4,7 +4,7 @@
 
 ## .Campus Tour 🤞
 
-It is a E-commerce made with HTML CSS 😊
+It is a Campus Tour Website of Academy Of Technology. 😊
 
 
 ## How to setup it on your device ?? 🤔
