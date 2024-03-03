@@ -130,6 +130,7 @@ ul:hover > a:not(:hover) {
   margin: auto;
   color: #fff;
   position: relative;
+  text-align: center;
 }
 
 .content .par {
@@ -170,6 +171,7 @@ ul:hover > a:not(:hover) {
 
 .cn:hover {
   background-color: #fff;
+  
 }
 
 .content span {
