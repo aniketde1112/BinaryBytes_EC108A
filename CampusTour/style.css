@@ -23,6 +23,7 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  
 }
 
 .navbar {
@@ -32,9 +33,13 @@ body {
 }
 
 .icon {
+  display: flex;
+  margin-left:-50px;
   width: 200px;
+  margin-top: 30px;
+  mix-blend-mode: multiply;
   float: left;
-  height: 70px;
+  height: 100px;
 }
 
 .logo {
@@ -48,10 +53,12 @@ body {
 }
 
 .menu {
+  margin-top: 40px;
   width: 400px;
   float: left;
   height: 70px;
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -89,6 +96,7 @@ ul:hover > a:not(:hover) {
 }
 
 .search {
+  margin-top: 40px;
   width: 330px;
   float: left;
   margin-left: 270px;
