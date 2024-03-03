@@ -8,11 +8,20 @@ body {
   background-image: url(images/aotcampus.jpg);
   width: 100vw;
   height: 100vh;
-  background-size: cover;
+  position: absolute;
+  transform: translate(0%,0%);
+  background-size: 100%;
   background-position: center;
   background-attachment: fixed;
+  animation: slider 20s infinite linear;
 }
-
+ @keyframes slider{
+    0%{ background-image: url(images/aotcampus.jpg); }
+    20%{ background-image: url(images/aotcampus1.jpg); background-size: 100% 100%} 
+    40%{ background-image: url(images/aotcampus2.jpg); background-size: 100% 100% }
+    60%{ background-image: url(images/aotcampus3.jpg); background-size: 100% 100% }
+    80%{ background-image: url(images/aotcampus4.jpg); background-size: 100% 100% }
+}
 .main {
   width: 100vw;
   background: linear-gradient(
