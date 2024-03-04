@@ -6,6 +6,12 @@ Welcome to the repository for the Academy of Technology Campus Tour Website! Thi
 ## Deployment Link
 <br>https://binary-bytes-ec-108-a.vercel.app/
 
+## Website Tour Video Link
+<br>
+https://youtu.be/PapUxc_ADto
+
+## Images G-Drive Link
+https://drive.google.com/drive/folders/1m7RTxtDBl9Bh-ewHrzmXBJqVKhjfKZSF?usp=sharing
 
 ## Features
 
@@ -38,19 +44,19 @@ We welcome contributions from the community to enhance and improve the campus to
 2. Make your changes, following the coding style and best practices.
 3. Test your changes thoroughly and ensure they don't introduce any regressions.
 4. Submit a pull request with a clear description of your changes and their purpose.
-## Acknowledgements
+# Acknowledgements
 
 Special thanks to our development team and contributors for their hard work and dedication in bringing this project to life.
 
-#Photo Credits:
+## Photo Credits:
 1. Dhritiman Bhattacharjee
 2. Arkadip Ray
    
-#Team Lead:
+## Team Lead:
 <br>
 Aniket De(GitHub: https://github.com/aniketde1112)
 
-#Team Members
+## Team Members
 1. Arkadip Ray(GitHub: https://github.com/arkamaths2006)
 2. Dhritiman Bhattacharjee(GitHub: https://github.com/Dhriti007)
 3. Anindya Koley(GitHub: https://github.com/itsanindyak)
