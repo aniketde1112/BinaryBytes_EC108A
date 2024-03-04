@@ -38,3 +38,11 @@ We welcome contributions from the community to enhance and improve the campus to
 ## Acknowledgements
 
 Special thanks to our development team and contributors for their hard work and dedication in bringing this project to life.
+
+#Team Lead/Captain
+Aniket De(GitHub: https://github.com/aniketde1112)
+
+#Team Members
+1. Arkadip Ray(GitHub: https://github.com/arkamaths2006)
+2. Dhritiman Bhattacharjee(GitHub: https://github.com/Dhriti007)
+3. Anindya Koley(GitHub: https://github.com/itsanindyak)
