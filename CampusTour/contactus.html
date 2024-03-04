@@ -1,166 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academy of Technology - Contact Us</title>
-  <link rel="icon"  href="map.jpg">
-  <style>
-    body {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy of Technology - Contact Us</title>
+    <link rel="icon" href="map.jpg" />
+    <style>
+      body {
+        background-image: url(images/map.jpg);
+        width: 100vh;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flexbox;
+        background-color: #f0f0f0;
+        justify-content: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: rgba(195, 236, 129, 0.726);
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        align-items: center;
+        padding: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
 
-      background-image: url(images/map.jpg);
-      width: 100vh;
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 20px;
-      display: flexbox;
-      background-color: #f0f0f0;
-      justify-content: center;
-    }
-    .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: rgba(195, 236, 129, 0.726);
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-           margin-top: -100px;
-            align-items: center;
-            padding: 200px;
-            margin-left: 500px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            
+      /* Media queries for smaller screens */
+      @media (max-width: 768px) {
+        .container {
+          padding: 150px; /* Adjust padding as needed for smaller screens */
         }
-    h1, h2, h3, h4 {
-      margin-bottom: 15px;
-      text-align: center;
-    }
+      }
 
-    h1 {
-      font-size: 2.5em;
-      text-align: center;
-    }
+      @media (max-width: 480px) {
+        .container {
+          padding: 100px; /* Adjust padding as needed for smaller screens */
+        }
+      }
 
-    h2 {
-      font-size: 1.8em;
-      text-align: center;
-    }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin-bottom: 15px;
+        text-align: center;
+      }
 
-    h3, h4 {
-      font-size: 1.2em;
-      text-align: center;
-    }
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+      }
 
-    p {
-      margin-bottom: 10px;
-      line-height: 1.5;
-      text-align: center;
-    }
+      h2 {
+        font-size: 1.8em;
+        text-align: center;
+      }
 
-    address {
-      font-style: italic;
-      margin-bottom: 15px;
-      text-align: center;
-    }
+      h3,
+      h4 {
+        font-size: 1.2em;
+        text-align: center;
+      }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+      p {
+        margin-bottom: 10px;
+        line-height: 1.5;
+        text-align: center;
+      }
 
-    li {
-      margin-bottom: 15px;
-    }
+      address {
+        font-style: italic;
+        margin-bottom: 15px;
+        text-align: center;
+      }
 
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-  <h1>Academy of Technology - Contact Us</h1>
-  <hr>
+      li {
+        margin-bottom: 15px;
+      }
 
-  <h2>Main Campus</h2>
-  <address>
-    G.T.ROAD (ADISAPTAGRAM), AEDCONAGAR<br>
-    HOOGHLY-712121 WEST BENGAL, INDIA
-  </address>
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
 
-  <h3>Departments</h3>
-  <ul>
-    <li>
-      <h4>Admin Dept</h4>
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Academy of Technology - Contact Us</h1>
+      <hr />
+
+      <h2>Main Campus</h2>
+      <address>
+        G.T.ROAD (ADISAPTAGRAM), AEDCONAGAR<br />
+        HOOGHLY-712121 WEST BENGAL, INDIA
+      </address>
+
+      <h3>Departments</h3>
+      <ul>
+        <li>
+          <h4>Admin Dept</h4>
+          <p>
+            Tel.: +91-9830161441<br />
+            Email: <a href="mailto:admin@aot.edu.in">admin@aot.edu.in</a>
+          </p>
+        </li>
+        <li>
+          <h4>Director/ Principal Office</h4>
+          <p>
+            Tel.: +91-9830196317<br />
+            Email: <a href="mailto:academy@aot.edu.in">academy@aot.edu.in</a>
+          </p>
+        </li>
+        <li>
+          <h4>Academic & Exam. Dept</h4>
+          <p>
+            Tel.: +91-9073360791<br />
+            Email: <a href="mailto:oicexam@aot.edu.in">oicexam@aot.edu.in</a>
+          </p>
+        </li>
+        <li>
+          <h4>Admission Office</h4>
+          <p>
+            Tel.: +91-98310-21706/ 98310-21641<br />
+            Email: <a href="mailto:admission@aot.edu.in"
+              >admission@aot.edu.in</a
+            >
+          </p>
+        </li>
+        <li>
+          <h4>Account Section</h4>
+          <p>
+            Tel.: +91-9073360790<br />
+            Email: <a href="mailto:accounts@aot.edu.in">accounts@aot.edu.in</a>
+          </p>
+        </li>
+        <li>
+          <h4>Training Dept.</h4>
+          <p>
+            Tel.: +91-9073360792<br />
+            Email: <a href="mailto:training@aot.edu.in">training@aot.edu.in</a>
+          </p>
+        </li>
+      </ul>
+
+      <h2>Corporate Relation Office</h2>
       <p>
-        Tel.: +91-9830161441<br>
-        Email: <a href="mailto:admin@aot.edu.in">admin@aot.edu.in</a>
-      </p>
-    </li>
-    <li>
-      <h4>Director/ Principal Office</h4>
-      <p>
-        Tel.: +91-9830196317<br>
-        Email: <a href="mailto:academy@aot.edu.in">academy@aot.edu.in</a>
-      </p>
-    </li>
-    <li>
-      <h4>Academic & Exam. Dept</h4>
-      <p>
-        Tel.: +91-9073360791<br>
-        Email: <a href="mailto:oicexam@aot.edu.in">oicexam@aot.edu.in</a>
-      </p>
-    </li>
-    <li>
-      <h4>Admission Office</h4>
-      <p>
-        Tel.: +91-98310-21706/ 98310-21641<br>
-        Email: <a href="mailto:admission@aot.edu.in">admission@aot.edu.in</a>
-      </p>
-    </li>
-    <li>
-      <h4>Account Section</h4>
-      <p>
-        Tel.: +91-9073360790<br>
-        Email: <a href="mailto:accounts@aot.edu.in">accounts@aot.edu.in</a>
-      </p>
-    </li>
-    <li>
-      <h4>Training Dept.</h4>
-      <p>
-        Tel.: +91-9073360792<br>
-        Email: <a href="mailto:training@aot.edu.in">training@aot.edu.in</a>
-      </p>
-    </li>
-  </ul>
+        CA-150, SALT LAKE, SECTOR-1, KOLKATA-700 064<br />
 
-  <h2>Corporate Relation Office</h2>
-  <p>
-    CA-150, SALT LAKE, SECTOR-1, KOLKATA-700 064<br>
-    
-    Tel: +91-9830156906/ 9830156907<br>
-    Email: 
-    <a href="mailto:placement@aot.edu.in">placement@aot.edu.in</a>, 
-    <a href="mailto:corporaterelations@aot.edu.in">corporaterelations@aot.edu.in</a>
-  </p>
+        Tel: +91-9830156906/ 9830156907<br />
+        Email: 
+        <a href="mailto:placement@aot.edu.in">placement@aot.edu.in</a>, 
+        <a href="mailto:corporaterelations@aot.edu.in"
+          >corporaterelations@aot.edu.in</a
+        >
+      </p>
 
-  <h2>iON DIGITAL ZONE</h2>
-  <address>
-    G.T.ROAD (ADISAPTAGRAM), AEDCONAGAR<br>
-    HOOGHLY-712121 WEST BENGAL, INDIA
-  </address>
-  <p>Tel:+91-9007556186/9830210962</p>
-</div>
-</body>
+      <h2>iON DIGITAL ZONE</h2>
+      <address>
+        G.T.ROAD (ADISAPTAGRAM), AEDCONAGAR<br />
+        HOOGHLY-712121 WEST BENGAL, INDIA
+      </address>
+      <p>Tel:+91-9007556186/9830210962</p>
+    </div>
+  </body>
 </html>
