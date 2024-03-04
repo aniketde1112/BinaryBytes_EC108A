@@ -40,6 +40,7 @@ We welcome contributions from the community to enhance and improve the campus to
 Special thanks to our development team and contributors for their hard work and dedication in bringing this project to life.
 
 #Team Lead/Captain
+<br>
 Aniket De(GitHub: https://github.com/aniketde1112)
 
 #Team Members
