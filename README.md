@@ -4,8 +4,7 @@
 Welcome to the repository for the Academy of Technology Campus Tour Website! This website is designed to provide an immersive virtual tour of our engineering college, allowing prospective students, parents, and visitors to explore our campus facilities and learn more about our academic programs.
 
 ## Deployment Link
-<br>
-https://binary-bytes-ec-108-a.vercel.app/
+<br>https://binary-bytes-ec-108-a.vercel.app/
 
 
 ## Features
