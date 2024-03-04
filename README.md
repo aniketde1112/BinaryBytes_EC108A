@@ -42,7 +42,11 @@ We welcome contributions from the community to enhance and improve the campus to
 
 Special thanks to our development team and contributors for their hard work and dedication in bringing this project to life.
 
-#Team Lead/Captain
+#Photo Credits:
+1. Dhritiman Bhattacharjee
+2. Arkadip Ray
+   
+#Team Lead:
 <br>
 Aniket De(GitHub: https://github.com/aniketde1112)
 
