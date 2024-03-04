@@ -47,28 +47,27 @@
       margin-left: 20px;
     }
 
-    .submit-button {
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 50px; /* Round button */
-      cursor: pointer; /* Change cursor on hover */
-      margin-left: 20px;
-      src: url(thanks.html);
-    }
 
     .subscribe-link{
       text-decoration: none;
+      color:whitesmoke;
     }
-
-    .submit-button:hover {
-      background-color: #45a049; /* Darker green on hover */
-    }
+    .submit-button {
+        background-color: rgba(171, 5, 5, 0.664);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: opacity 1s;
+      }
+      .submit-button:hover {
+        opacity:0.7;
+      }
+      .submit-button:active{
+        opacity:0.5;
+      }
   </style>
   <script>
     function submitForm() {
@@ -99,6 +98,7 @@
     <input type="number" class="text-box" id="year" name="year" min="1" max="4" required>
 
     <button type="submit" class="submit-button"><a href = "thanks.html" class = "subscribe-link">Subscribe</a></button>
+    
   </form>
 </body>
 </html>
