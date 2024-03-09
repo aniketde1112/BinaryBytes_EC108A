@@ -32,8 +32,10 @@
 
     .heading{
       font-family: cursive;
+      text-align: center;
       font-size: 2em;
       font-style: oblique;
+      color: aliceblue;
     }
 
     .overlay {
@@ -66,67 +68,215 @@
     #full-image.active {
       display: block;
     }
-    h1 {
-      text-align: center; /* Center the heading */
-      color: white; /* Set text color to white */
-      font-weight: bold;
-      font-size: xx-large;
-      size: 1000px;
+
+    .gallery-wrap {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      z-index: 1000;
+      left: 10%;
+      right: 10%;
+    }
+
+    .gallery-wrap img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    /* CSS for white-colored icons */
+    #backBtn,
+    #nextBtn {
+      filter: invert(1);
+      display: none; /* initially hide */
     }
   </style>
 </head>
-<body bgcolor = black>
-    <h1 class ="heading">GALLERY</h1>
-    <div class="image-gallery">
-      </div>
+<body bgcolor="black">
+  <h1 class="heading">GALLERY</h1>
   <div class="image-gallery">
-    <img src="images/img (1).jpeg" alt="Image 1" class="gallery-image" data-full-src="images/img (1).jpeg">
-    <img src="images/img (2).jpeg" alt="Image 2" class="gallery-image" data-full-src="images/img (2).jpeg">
-    <img src="images/img (3).jpeg" alt="Image 3" class="gallery-image" data-full-src="images/img (3).jpeg">
-    <img src="images/img (4).jpeg" alt="Image 4" class="gallery-image" data-full-src="images/img (4).jpeg">
-    <img src="images/img (5).jpeg" alt="Image 5" class="gallery-image" data-full-src="images/img (5).jpeg">
-    <img src="images/img (6).jpeg" alt="Image 6" class="gallery-image" data-full-src="images/img (6).jpeg">
-    <img src="images/img (7).jpeg" alt="Image 7" class="gallery-image" data-full-src="images/img (7).jpeg">
-    <img src="images/img (8).jpeg" alt="Image 8" class="gallery-image" data-full-src="images/img (8).jpeg">
-    <img src="images/img (9).jpeg" alt="Image 9" class="gallery-image" data-full-src="images/img (9).jpeg">
-    <img src="images/img(10).jpeg" alt="Image 10" class="gallery-image" data-full-src="images/img(10).jpeg">
-    <img src="images/img(11).jpeg" alt="Image 11" class="gallery-image" data-full-src="images/img(11).jpeg">
-    <img src="images/img(12).jpeg" alt="Image 12" class="gallery-image" data-full-src="images/img(12).jpeg">
-    <img src="images/img(13).jpeg" alt="Image 13" class="gallery-image" data-full-src="images/img(13).jpeg">
-    <img src="images/img(14).jpeg" alt="Image 14" class="gallery-image" data-full-src="images/img(14).jpeg">
-    <img src="images/img(15).jpeg" alt="Image 15" class="gallery-image" data-full-src="images/img(15).jpeg">
-    <img src="images/img(16).jpeg" alt="Image 16" class="gallery-image" data-full-src="images/img(16).jpeg">
-    <img src="images/img(17).jpeg" alt="Image 17" class="gallery-image" data-full-src="images/img(17).jpeg">
-    <img src="images/img(18).jpeg" alt="Image 18" class="gallery-image" data-full-src="images/img(18).jpeg">
-    <img src="images/img(19).jpeg" alt="Image 19" class="gallery-image" data-full-src="images/img(19).jpeg">
-    
+    <img
+      src="images/img (1).jpeg"
+      alt="Image 1"
+      class="gallery-image"
+      data-full-src="images/img (1).jpeg"
+    />
+    <img
+      src="images/img (2).jpeg"
+      alt="Image 2"
+      class="gallery-image"
+      data-full-src="images/img (2).jpeg"
+    />
+    <img
+    src="images/img (3).jpeg"
+    alt="Image 3"
+    class="gallery-image"
+    data-full-src="images/img (3).jpeg"
+  />
+  <img
+    src="images/img (4).jpeg"
+    alt="Image 4"
+    class="gallery-image"
+    data-full-src="images/img (4).jpeg"
+  />
+  <img
+    src="images/img (5).jpeg"
+    alt="Image 5"
+    class="gallery-image"
+    data-full-src="images/img (5).jpeg"
+  />
+  <img
+    src="images/img (6).jpeg"
+    alt="Image 6"
+    class="gallery-image"
+    data-full-src="images/img (6).jpeg"
+  />
+  <img
+    src="images/img (7).jpeg"
+    alt="Image 7"
+    class="gallery-image"
+    data-full-src="images/img (7).jpeg"
+  />
+  <img
+    src="images/img (8).jpeg"
+    alt="Image 8"
+    class="gallery-image"
+    data-full-src="images/img (8).jpeg"
+  />
+  <img
+    src="images/img (9).jpeg"
+    alt="Image 9"
+    class="gallery-image"
+    data-full-src="images/img (9).jpeg"
+  />
+  <img
+    src="images/img(10).jpeg"
+    alt="Image 10"
+    class="gallery-image"
+    data-full-src="images/img(10).jpeg"
+  />
+  <img
+    src="images/img(11).jpeg"
+    alt="Image 11"
+    class="gallery-image"
+    data-full-src="images/img(11).jpeg"
+  />
+  <img
+    src="images/img(12).jpeg"
+    alt="Image 12"
+    class="gallery-image"
+    data-full-src="images/img(12).jpeg"
+  />
+  <img
+    src="images/img(13).jpeg"
+    alt="Image 13"
+    class="gallery-image"
+    data-full-src="images/img(13).jpeg"
+  />
+  <img
+    src="images/img(14).jpeg"
+    alt="Image 14"
+    class="gallery-image"
+    data-full-src="images/img(14).jpeg"
+  />
+  <img
+    src="images/img(15).jpeg"
+    alt="Image 15"
+    class="gallery-image"
+    data-full-src="images/img(15).jpeg"
+  />
+  <img
+    src="images/img(16).jpeg"
+    alt="Image 16"
+    class="gallery-image"
+    data-full-src="images/img(16).jpeg"
+  />
+  <img
+    src="images/img(17).jpeg"
+    alt="Image 17"
+    class="gallery-image"
+    data-full-src="images/img(17).jpeg"
+  />
+  <img
+    src="images/img(18).jpeg"
+    alt="Image 18"
+    class="gallery-image"
+    data-full-src="images/img(18).jpeg"
+  />
+  <img
+    src="images/img(19).jpeg"
+    alt="Image 19"
+    class="gallery-image"
+    data-full-src="images/img(19).jpeg"
+  />
   </div>
-  <div class="gallery-wrap">
-    <img src="images/back.png" id="backBtn">
-    <img src="images/next.png" id="nextBtn">
-  </div>
-  
+
   <div class="overlay"></div>
-  <img id="full-image" src="" alt="">
-  
+  <img id="full-image" src="" alt="" />
+
+  <div class="gallery-wrap">
+    <img src="images/back.png" id="backBtn" />
+    <img src="images/front.png" id="nextBtn" />
+  </div>
+
   <script>
     const galleryImages = document.querySelectorAll('.gallery-image');
     const fullImage = document.getElementById('full-image');
     const overlay = document.querySelector('.overlay');
+    const backBtn = document.getElementById('backBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentImageIndex = 0;
 
-    galleryImages.forEach(image => {
+    // Function to show the current image
+    function showImage(index) {
+      fullImage.src = galleryImages[index].dataset.fullSrc;
+      currentImageIndex = index;
+      // Show navigation buttons
+      backBtn.style.display = 'block';
+      nextBtn.style.display = 'block';
+    }
+
+    // Function to show the previous image
+    function showPreviousImage() {
+      if (currentImageIndex > 0) {
+        showImage(currentImageIndex - 1);
+      }
+    }
+
+    // Function to show the next image
+    function showNextImage() {
+      if (currentImageIndex < galleryImages.length - 1) {
+        showImage(currentImageIndex + 1);
+      }
+    }
+
+    // Event listener for clicking on an image
+    galleryImages.forEach((image, index) => {
       image.addEventListener('click', () => {
-        fullImage.src = image.dataset.fullSrc;
+        showImage(index);
         fullImage.classList.add('active');
         overlay.classList.add('active');
       });
     });
 
+    // Event listener for clicking on the overlay
     overlay.addEventListener('click', () => {
       fullImage.src = '';
       fullImage.classList.remove('active');
       overlay.classList.remove('active');
+      // Hide navigation buttons
+      backBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
     });
+
+    // Event listener for clicking on the back button
+    backBtn.addEventListener('click', showPreviousImage);
+
+    // Event listener for clicking on the next button
+    nextBtn.addEventListener('click', showNextImage);
   </script>
 </body>
 </html>
