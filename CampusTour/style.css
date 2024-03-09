@@ -6,6 +6,7 @@
 
 body {
   background-image: url(images/aotcampus.jpg);
+  
   width: 100%;
   height: 100%;
   position: absolute;
@@ -39,11 +40,7 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0.5) 50%
-  );
+    
   background-position: center;
   background-size: 100%;
 }
@@ -80,12 +77,7 @@ body {
   margin-right: auto;
   width: 400px;
   float: left;
-<<<<<<< HEAD
   height: 70px;
-=======
-  height: 70px; 
-  
->>>>>>> d776171b219e7817ad6a494d023a39bfb1e5e006
 }
 
 ul {
@@ -103,11 +95,7 @@ ul a {
   font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
-<<<<<<< HEAD
   padding-left: 20px;
-=======
-  padding-left: 20px;;
->>>>>>> d776171b219e7817ad6a494d023a39bfb1e5e006
   padding-right: 20px;
   border-radius: 100px;
   transition: 0.3s;
@@ -166,6 +154,10 @@ ul:hover > a:not(:hover) {
 }
 .btn:hover{
   background: #71c9f29f;
+}
+
+.Community{
+  text-align: center;
 }
 
 .content {
@@ -281,6 +273,16 @@ ul:hover > a:not(:hover) {
   padding-top: 5px;
   transition: 0.3s ease;
 }
+.help{
+  text-align: center;
+  color:#fff;
+  
+}
+
+.help a{
+  text-decoration: none;
+  color:#000;
+}
 
 .footer {
   width: 100%;
@@ -340,27 +342,20 @@ ul:hover > a:not(:hover) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 600px;
+  
   color: rgb(8, 27, 35);
 }
 .box{
-  width:800px;
   display: flex;
-
-
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   gap: 40px;
-  height: 400px;
-  margin:10px;
-  box-shadow: -1px 0 10px #0000;
-  background-color: none;
-  justify-content: center;
-  text-decoration: none;
-  margin-left: 370px;
-  color: #d3efd7;
 }
 
 box img{
-  width:50px;
-  height: 50px;
-  display: flex;
+  height: 2em;
+  aspect-ratio: 1/1;
 }
