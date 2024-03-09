@@ -6,6 +6,7 @@
 
 body {
   background-image: url(images/aotcampus.jpg);
+  
   width: 100%;
   height: 100%;
   position: absolute;
@@ -46,9 +47,7 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 50%);
+    
   background-position: center;
   background-size: 100%;
 }
@@ -86,7 +85,6 @@ body {
   width: 400px;
   float: left;
   height: 70px;
-
 }
 
 ul {
@@ -166,6 +164,10 @@ ul:hover>a:not(:hover) {
 
 .btn:hover {
   background: #71c9f29f;
+}
+
+.Community{
+  text-align: center;
 }
 
 .content {
@@ -281,6 +283,16 @@ ul:hover>a:not(:hover) {
   padding-top: 5px;
   transition: 0.3s ease;
 }
+.help{
+  text-align: center;
+  color:#fff;
+  
+}
+
+.help a{
+  text-decoration: none;
+  color:#000;
+}
 
 .footer {
   width: 100%;
@@ -341,30 +353,22 @@ ul:hover>a:not(:hover) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 600px;
+  
   color: rgb(8, 27, 35);
 }
-
-.box {
-  width: 800px;
+.box{
   display: flex;
-
-
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   gap: 40px;
-  height: 400px;
-  margin: 10px;
-  box-shadow: -1px 0 10px #0000;
-  background-color: none;
-  justify-content: center;
-  text-decoration: none;
-  margin-left: 370px;
-  color: #d3efd7;
 }
 
-box img {
-  width: 50px;
-  height: 50px;
-  display: flex;
+box img{
+  height: 2em;
+  aspect-ratio: 1/1;
 }
 
 @media screen and (max-width: 780px) {
@@ -466,5 +470,15 @@ box img {
     80% {
       background-image: url(images/aotcampus4_copy.jpg);
     }
+  }
+  .box{
+    width: 100%;
+    gap: unset;
+  }
+  .box div{
+    width: 25%;
+  }
+  .box img{
+    width: 100%;
   }
 }
