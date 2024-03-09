@@ -87,25 +87,29 @@ ul a {
   font-weight: 500;
   font-size: 18px;
   padding-top: 10px;
-  padding-left: 16px;
   padding-bottom: 10px;
-  padding-left: 16px;
+  padding-left:20px;
+  padding-right: 20px;
   border-radius: 100px;
   transition: 0.3s;
 }
 
+
+
+
 ul a.active {
   background: #71c9f2;
   color: #000;
+  
+
 }
 ul a:hover {
   background: #71c9f2;
   color: black;
+  box-shadow: rgba(6, 26, 36, 0.758);
+ 
 }
-ul a:active {
-  background: #71c9f2c3;
-  
-}
+
 ul:hover > a:not(:hover) {
   background: none;
   color: white;
