@@ -6,8 +6,8 @@
 
 body {
   background-image: url(images/aotcampus.jpg);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   transform: translate(0%,0%);
   background-size: 100%;
@@ -17,21 +17,22 @@ body {
 }
  @keyframes slider{
     0%{ background-image: url(images/aotcampus.jpg); }
-    20%{ background-image: url(images/aotcampus1.jpg); background-size: 100% 100%} 
-    40%{ background-image: url(images/aotcampus2.jpg); background-size: 100% 100% }
-    60%{ background-image: url(images/aotcampus3.jpg); background-size: 100% 100% }
-    80%{ background-image: url(images/aotcampus4.jpg); background-size: 100% 100% }
+    20%{ background-image: url(images/aotcampus1.jpg); background-size: 100% auto} 
+    40%{ background-image: url(images/aotcampus2.jpg); background-size: 100% auto }
+    60%{ background-image: url(images/aotcampus3.jpg); background-size: 100% auto }
+    80%{ background-image: url(images/aotcampus4.jpg); background-size: 100% auto }
 }
 .main {
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.5) 50%,
     rgba(0, 0, 0, 0.5) 50%
   );
   background-position: center;
-  background-size: cover;
-  height: 100vh;
+  background-size: 100%;
+  
   
 }
 
@@ -289,4 +290,10 @@ ul:hover > a:not(:hover) {
   width:auto;
   height: 40px;
   color: rgb(238, 232, 221);
+}
+
+@media (max-width: 780px){
+  .body{
+    display: flex;
+  }
 }
