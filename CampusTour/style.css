@@ -388,7 +388,7 @@ body {
 
 @media (min-width: 992px) {
   .header {
-    left: 700px;
+    left: 800px;
     top: -15px;
     font-size: 20px;
   }
