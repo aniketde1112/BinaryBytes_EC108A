@@ -388,7 +388,7 @@ body {
 
 @media (min-width: 992px) {
   .header {
-    left: 540px;
+    left: 600px;
     top: -15px;
     font-size: 20px;
   }
@@ -417,7 +417,7 @@ body {
   }
 
   .footer {
-    top: 1100px;
+    top: 1200px;
     left: 65px;
   }
   .Community{
