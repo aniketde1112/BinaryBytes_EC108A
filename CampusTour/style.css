@@ -356,10 +356,12 @@ ul a.active {
 
 @media (min-width:768px) and (max-width: 991px) {
   
-  html {overflow-x: hidden;
+ 
+ html{
+   overflow-x: hidden;
  }
   .header {
-    left: 330px;
+    left: 310px;
     top: 15px;
   }
 
@@ -374,7 +376,10 @@ ul a.active {
 
   .search {
     top: 50px;
-    left: 450px;
+    left: 440px;
+  }
+  .srch{
+    width:13%;
   }
 
   .menu {
@@ -383,7 +388,7 @@ ul a.active {
   }
 
   .content {
-    left: 35px;
+    left: -10px;
   }
   .Help a{
     text-align: center;
@@ -398,14 +403,14 @@ ul a.active {
   }
 
   .Community {
-    left: -20px;
+    left: -40px;
   }
 
   .box {
     display: flex;
     gap: 50px;
     top: 30px;
-    left: -35px;
+    left: -55px;
   }
 
   .social {
@@ -429,7 +434,7 @@ ul a.active {
 
 
 @media (min-width: 992px) {
-   html {overflow-x: hidden;}
+   
   .header {
     left: 150%;
     top: -45px;
@@ -446,11 +451,11 @@ ul a.active {
 
   .search {
     top: 70px;
-    left: 600px;
+    left: 650px;
   }
 
   .menu {
-    left: 550px;
+    left: 650px;
     top: 70px;
   }
 
