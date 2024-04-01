@@ -60,10 +60,9 @@ body {
 }
 
 .menu {
-  position: relative;
+  position: absolute;
 
-  grid-area: 2 / 1 / 3 / 5; /* Adjusted grid area values */
-  
+  grid-area: 2 / 1 / 3 / 5; 
   justify-self: center;
 }
 
@@ -91,7 +90,7 @@ ul a.active {
  a:hover {
   background-color: #71c9f2;
   color: #000;
-  box-shadow: 0 0 5px rgba(6, 26, 36, 0.5);
+  box-shadow: 4px 4px 4px rgba(6, 26, 36, 0.5);
 } 
 
 
@@ -125,7 +124,7 @@ ul a.active {
 
 .srch {
   font-family: "Times New Roman";
-  max-width: 40%;
+  max-width: 20%;
   background: transparent;
   border: 1px solid #81a3b4;
   color: #f6f2f2;
@@ -285,6 +284,10 @@ ul a.active {
     left: 490px !important;
    
   }
+  .menu {
+    left: 200px !important;
+    
+  }
 }
 
 @media(max-width: 767px) {
@@ -294,8 +297,8 @@ ul a.active {
   }
 
   .icon img {
-    width: 80%;
-    height: 95%;
+    width: 60%;
+    height: 65%;
     grid-area: 1 / 1 / 2 / 2;
   }
 
@@ -303,10 +306,13 @@ ul a.active {
     top: 20px;
     left: 100px;
   }
+  .srch{
+    max-width: 50% !important;
+  }
 
   .menu {
-    left: 70px;
-    top: -5px;
+    left: 130px;
+    top: 95px;
   }
 
   .content {
@@ -356,7 +362,7 @@ ul a.active {
   .icon img {
     width: 80%;
     height: 100px;
-    left: 50px;
+    left: 10px !important;
     top: 20px;
     grid-area: 1 / 1 / 2 / 2;
 
@@ -364,12 +370,12 @@ ul a.active {
 
   .search {
     top: 50px;
-    left: 130px;
+    left: 450px;
   }
 
   .menu {
-    left: 50px;
-    top: 5px;
+    left: 280px;
+    top: 55px;
   }
 
   .content {
@@ -435,12 +441,12 @@ ul a.active {
 
   .search {
     top: 70px;
-    left: 90px;
+    left: 600px;
   }
 
   .menu {
-    left: -20px;
-    top: -5px;
+    left: 550px;
+    top: 70px;
   }
 
   .content {
@@ -483,15 +489,31 @@ ul a.active {
   }
 }
 @media(width:1024px){
-  .Help a{
-    
-
-    left: 800px !important;
+  .icon img {
    
+    left: 40px !important;
+   }
+  .menu {
+    left: 350px;
+    top: 70px;
   }
-
+  .search {
+    top: 70px !important;
+    left: 450px !important;
+  }
+  .Help a{
+    left: 800px !important;
+   }
 }
 @media(width:1280px){
+  .menu {
+    left: 500px;
+    top: 70px;
+  }
+  .search {
+    top: 70px !important;
+    left: 550px !important;
+  }
   .Help a{
     left: 1000px!important;
    
