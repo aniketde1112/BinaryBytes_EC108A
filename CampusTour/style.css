@@ -3,29 +3,36 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
 .main {
   width: 100%;
   height: 100%;
   background-position: center;
   background-size: 100%;
 }
+
 @keyframes slider {
   0% {
     background-image: url(images/aotcampus.jpg);
   }
+
   20% {
     background-image: url(images/2.jpg);
   }
+
   40% {
     background-image: url(images/img\(11\).jpeg);
   }
+
   60% {
     background-image: url(images/img\ \(5\).jpeg);
   }
+
   80% {
     background-image: url(images/aotcampus4_copy.jpg);
   }
 }
+
 body {
   background-image: url(images/aotcampus.jpg);
   width: 100%;
@@ -37,96 +44,105 @@ body {
   background-attachment: fixed;
   animation: slider 20s infinite linear;
 }
+
 .navbar {
-  width: 100%;
+ 
   display: grid;
-  height: max-content;
+  
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+
 .icon img {
-  
-  
-  
   position: relative;
   grid-area: 1 / 1 / 2 / 2;
 }
+
 .menu {
   position: relative;
-  width: max-content;
-  grid-area: 2 / 1 / 3 / 5;
-  margin-top: 20px;
-  height: max-content;
+
+  grid-area: 2 / 1 / 3 / 5; /* Adjusted grid area values */
+  
   justify-self: center;
 }
-.menu ul {
+
+
+ ul {
   display: flex;
-  gap: 30px;
+  gap: 20%;
   justify-content: center;
   align-items: center;
-}
- ul a {
+} 
+
+ul a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 100%;
+  padding: 3%;
   border-radius: 100px;
-  transition: 0.3s;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
- ul a.active {
+
+ul a.active {
   background: #71c9f2;
   color: #000;
 }
-ul a:hover {
-  background: #71c9f2;
-  color: black;
-  box-shadow: rgba(6, 26, 36, 0.758);
-}
-ul:hover>a:not(:hover) {
+ a:hover {
+  background-color: #71c9f2;
+  color: #000;
+  box-shadow: 0 0 5px rgba(6, 26, 36, 0.5);
+} 
+
+
+.menu:hover a:not(:hover) {
   background: none;
   color: white;
 }
+
+
 .header {
   color: #fff;
   position: relative;
   text-align: center;
   justify-content: center;
 }
+
 .header h1 {
   text-align: center;
   color: #cde2d6;
 }
+
 .header span {
   color: #cde2d6;
 }
+
 .search {
   width: 100%;
   position: relative;
   grid-area: 1 / 2 / 2 / 5;
 }
+
 .srch {
   font-family: "Times New Roman";
   max-width: 40%;
   background: transparent;
   border: 1px solid #81a3b4;
   color: #f6f2f2;
-  font-size: 16px;
   padding: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   width: 70%;
   font-size: 14px;
 }
+
 ::placeholder {
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
+
 .btn {
-  width: 20%;
+  width: 70px;
   height: 40px;
   background: #71c9f2;
   border: 2px solid #71c9f2;
@@ -135,17 +151,19 @@ ul:hover>a:not(:hover) {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .btn:hover {
   background: #71c9f29f;
 }
+
 .content {
   width: 100%;
-  height: auto;
-  margin: auto;
+  height: 100%;
   color: #fff;
   position: relative;
   text-align: center;
 }
+
 .content .par {
   padding-left: 20px;
   padding-bottom: 25px;
@@ -153,6 +171,7 @@ ul:hover>a:not(:hover) {
   letter-spacing: 1.2px;
   line-height: 30px;
 }
+
 .content h1 {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
@@ -161,33 +180,45 @@ ul:hover>a:not(:hover) {
   letter-spacing: 2px;
   text-align: center;
 }
+
 .content .cn {
-  width: 160px;
+  width: 150px;
   height: 40px;
   background: #71c9f2;
-  border: none;
-  margin-bottom: 10px;
-  margin-left: 20px;
   font-size: 18px;
   border-radius: 10px;
-  cursor: pointer;
   transition: 0.4s ease;
 }
+
 .content .cn a {
   text-decoration: none;
   color: #000;
   transition: 0.3s ease;
 }
+
 .cn:hover {
   background-color: #fff;
 }
+
 .content span {
   color: #71c9f2;
   font-size: 65px;
 }
+.Help a{
+  text-decoration: none;
+  position: absolute;
+  background-color: black;
+  color: azure;
+}
+.Help a:hover{
+  background-color: black;
+  color: azure;
+  text-decoration: underline;
+}
+
 .footer {
   width: 100%;
-  height: 100px;
+  height: 10%;
   position: absolute;
   /* Adjusted margin */
   display: flex;
@@ -195,26 +226,32 @@ ul:hover>a:not(:hover) {
   align-items: center;
   justify-content: center;
 }
+
 .Community {
   color: rgb(234, 241, 244);
   position: relative;
 }
+
 .box {
-  display: flex;
+
   position: relative;
-  gap: 45px;
+  border: 2px;
   text-align: center;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #cde2d6;
 }
+
 .box div {
   width: 25%;
 }
+
 .box img {
   height: 8em;
   aspect-ratio: 1/1;
+
 }
+
 .social {
   position: relative;
   display: flex;
@@ -226,153 +263,237 @@ ul:hover>a:not(:hover) {
   margin-right: auto;
   gap: 10px;
 }
+
 .social img {
   height: 2em;
   aspect-ratio: 1/1;
 }
+
 .copyright {
   display: block;
   position: relative;
   text-align: center;
   color: rgb(238, 232, 221);
 }
-@media (max-width: 767px) {
+
+@media(width: 540px) {
   .header {
-    left: 220px;
-    top: 25px;
+    left: 235px !important;
   }
-  .icon img {
-    width: 80%;
-    height: 75px;
-    grid-area: 1 / 1 / 2 / 2;
-  
+  .Help a{
+    
+    left: 490px !important;
+   
   }
-  .search{
-    top:20px;
-    left:50px;
-  }
-  .menu {
-    left: 30px;
+}
+
+@media(max-width: 767px) {
+  .header {
+    left: 165px;
     top: -5px;
   }
+
+  .icon img {
+    width: 80%;
+    height: 95%;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .search {
+    top: 20px;
+    left: 100px;
+  }
+
+  .menu {
+    left: 70px;
+    top: -5px;
+  }
+
   .content {
-    left: 85px;
+    left: 50px;
   }
+
+  .Help a{
+    
+    left: 440px;
+    top: 1460px;
+  }
+
   .footer {
-    top: 1100px;
-    left: 85px;
+    top: 1200px;
+    left: 50px;
   }
+
+  .Community {
+    top: -50px;
+  }
+
   .box {
-    top: 30px;
-    left: 15px;
+    display: flex;
+    gap: 45px;
   }
+
   .social {
     display: flex;
-    top: 80px;
-    gap: 50px;
     left: -50px;
+    top: 40px;
+    gap: 50px;
+
   }
+
   .copyright {
-    top: 80px;
+    top: 50px;
     left: 10px;
   }
 }
+
 @media (min-width:768px) and (max-width: 991px) {
   .header {
     left: 330px;
-    top: 35px;
+    top: 15px;
   }
+
   .icon img {
     width: 80%;
     height: 100px;
     left: 50px;
     top: 20px;
     grid-area: 1 / 1 / 2 / 2;
-  
+
   }
-  .search{
-    top:50px;
-    left:90px;
+
+  .search {
+    top: 50px;
+    left: 130px;
   }
+
   .menu {
-    left: 30px;
-    top: -5px;
+    left: 50px;
+    top: 5px;
   }
+
   .content {
     left: 35px;
   }
+  .Help a{
+    text-align: center;
+
+    left: 730px;
+    top: 1380px;
+  }
+
   .footer {
-    top: 1000px;
+    top: 1100px;
     left: 65px;
   }
-  .Community{
-    left:-20px;
+
+  .Community {
+    left: -20px;
   }
+
   .box {
+    display: flex;
+    gap: 50px;
     top: 30px;
     left: -35px;
   }
+
   .social {
     display: flex;
     top: 80px;
     gap: 50px;
     left: -50px;
   }
+
   .copyright {
     top: 80px;
     left: -20px;
   }
 }
 
+@media(width:912px) {
+  .header {
+    left: 400px !important;
+  }
+}
+
+
 @media (min-width: 992px) {
   .header {
-    left: 100%;
-    top: -15px;
+    left: 150%;
+    top: -45px;
     font-size: 20px;
   }
-    
-    
-  
   .icon img {
     width: 80%;
     height: 160px;
     left: 70px;
     top: 20px;
     grid-area: 1 / 1 / 2 / 2;
-  
+
   }
-  .search{
-    top:70px;
-    left:90px;
+
+  .search {
+    top: 70px;
+    left: 90px;
   }
+
   .menu {
     left: -20px;
     top: -5px;
   }
+
   .content {
-    top:-100px;
+    top: -140px;
     left: -18px;
-  
+
+  }
+  .Help a{
+    text-align: center;
+
+    left: 1200px;
+    top: 1450px;
   }
   .footer {
     top: 1200px;
     left: 65px;
   }
-  .Community{
-    left:-80px;
+
+  .Community {
+    left: -80px;
   }
+
   .box {
+    display: flex;
+    gap: 50px;
     top: 30px;
     left: -85px;
   }
+
   .social {
     display: flex;
     top: 80px;
     gap: 50px;
     left: -50px;
   }
+
   .copyright {
     top: 80px;
     left: -60px;
+  }
+}
+@media(width:1024px){
+  .Help a{
+    
+
+    left: 800px !important;
+   
+  }
+
+}
+@media(width:1280px){
+  .Help a{
+    left: 1000px!important;
+   
   }
 }
