@@ -3,37 +3,29 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-
 .main {
   width: 100%;
   height: 100%;
-
   background-position: center;
   background-size: 100%;
 }
-
 @keyframes slider {
   0% {
     background-image: url(images/aotcampus.jpg);
   }
-
   20% {
     background-image: url(images/2.jpg);
   }
-
   40% {
     background-image: url(images/img\(11\).jpeg);
   }
-
   60% {
     background-image: url(images/img\ \(5\).jpeg);
   }
-
   80% {
     background-image: url(images/aotcampus4_copy.jpg);
   }
 }
-
 body {
   background-image: url(images/aotcampus.jpg);
   width: 100%;
@@ -45,8 +37,6 @@ body {
   background-attachment: fixed;
   animation: slider 20s infinite linear;
 }
-
-
 .navbar {
   width: 100%;
   display: grid;
@@ -54,38 +44,32 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 .icon img {
   
   
   
   position: relative;
   grid-area: 1 / 1 / 2 / 2;
-
 }
-
 .menu {
   position: relative;
   width: max-content;
   grid-area: 2 / 1 / 3 / 5;
- 
+  margin-top: 20px;
   height: max-content;
   justify-self: center;
 }
-
 .menu ul {
-
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
 }
-
 .menu ul a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 100%;
+  font-size: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -93,46 +77,37 @@ body {
   border-radius: 100px;
   transition: 0.3s;
 }
-
 .menu ul a.active {
   background: #71c9f2;
   color: #000;
 }
-
 .menu ul a:hover {
   background: #71c9f2;
   color: black;
   box-shadow: rgba(6, 26, 36, 0.758);
 }
-
 .menu ul:hover>a:not(:hover) {
   background: none;
   color: white;
 }
-
 .header {
   color: #fff;
   position: relative;
   text-align: center;
   justify-content: center;
 }
-
 .header h1 {
   text-align: center;
   color: #cde2d6;
 }
-
 .header span {
   color: #cde2d6;
 }
-
 .search {
   width: 100%;
   position: relative;
   grid-area: 1 / 2 / 2 / 5;
 }
-
-
 .srch {
   font-family: "Times New Roman";
   max-width: 40%;
@@ -146,12 +121,10 @@ body {
   width: 70%;
   font-size: 14px;
 }
-
 ::placeholder {
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
-
 .btn {
   width: 20%;
   height: 40px;
@@ -162,11 +135,9 @@ body {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .btn:hover {
   background: #71c9f29f;
 }
-
 .content {
   width: 100%;
   height: auto;
@@ -175,7 +146,6 @@ body {
   position: relative;
   text-align: center;
 }
-
 .content .par {
   padding-left: 20px;
   padding-bottom: 25px;
@@ -183,7 +153,6 @@ body {
   letter-spacing: 1.2px;
   line-height: 30px;
 }
-
 .content h1 {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
@@ -192,7 +161,6 @@ body {
   letter-spacing: 2px;
   text-align: center;
 }
-
 .content .cn {
   width: 160px;
   height: 40px;
@@ -205,40 +173,32 @@ body {
   cursor: pointer;
   transition: 0.4s ease;
 }
-
 .content .cn a {
   text-decoration: none;
   color: #000;
   transition: 0.3s ease;
 }
-
 .cn:hover {
   background-color: #fff;
 }
-
 .content span {
   color: #71c9f2;
   font-size: 65px;
 }
-
 .footer {
   width: 100%;
   height: 100px;
-
   position: absolute;
-
   /* Adjusted margin */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .Community {
   color: rgb(234, 241, 244);
   position: relative;
 }
-
 .box {
   display: flex;
   position: relative;
@@ -248,18 +208,13 @@ body {
   align-items: center;
   color: #cde2d6;
 }
-
 .box div {
   width: 25%;
 }
-
 .box img {
   height: 8em;
   aspect-ratio: 1/1;
-
 }
-
-
 .social {
   position: relative;
   display: flex;
@@ -271,26 +226,21 @@ body {
   margin-right: auto;
   gap: 10px;
 }
-
 .social img {
   height: 2em;
   aspect-ratio: 1/1;
 }
-
 .copyright {
   display: block;
   position: relative;
   text-align: center;
   color: rgb(238, 232, 221);
 }
-
-
 @media (max-width: 767px) {
   .header {
     left: 220px;
     top: 25px;
   }
-
   .icon img {
     width: 80%;
     height: 75px;
@@ -305,40 +255,33 @@ body {
     left: 30px;
     top: -5px;
   }
-
   .content {
     left: 85px;
   }
-
   .footer {
     top: 1100px;
     left: 85px;
   }
-
   .box {
     top: 30px;
     left: 15px;
   }
-
   .social {
     display: flex;
     top: 80px;
     gap: 50px;
     left: -50px;
   }
-
   .copyright {
     top: 80px;
     left: 10px;
   }
 }
-
 @media (min-width:768px) and (max-width: 991px) {
   .header {
     left: 330px;
     top: 35px;
   }
-
   .icon img {
     width: 80%;
     height: 100px;
@@ -355,11 +298,9 @@ body {
     left: 30px;
     top: -5px;
   }
-
   .content {
     left: 35px;
   }
-
   .footer {
     top: 1000px;
     left: 65px;
@@ -371,15 +312,12 @@ body {
     top: 30px;
     left: -35px;
   }
-
-
   .social {
     display: flex;
     top: 80px;
     gap: 50px;
     left: -50px;
   }
-
   .copyright {
     top: 80px;
     left: -20px;
@@ -388,11 +326,21 @@ body {
 
 @media (min-width: 992px) {
   .header {
-    left: 150%;
+    left: 800px;
     top: -15px;
     font-size: 20px;
   }
 
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
   .icon img {
     width: 80%;
     height: 160px;
@@ -409,13 +357,11 @@ body {
     left: -20px;
     top: -5px;
   }
-
   .content {
     top:-100px;
     left: -18px;
   
   }
-
   .footer {
     top: 1200px;
     left: 65px;
@@ -427,15 +373,12 @@ body {
     top: 30px;
     left: -85px;
   }
-
-
   .social {
     display: flex;
     top: 80px;
     gap: 50px;
     left: -50px;
   }
-
   .copyright {
     top: 80px;
     left: -60px;
