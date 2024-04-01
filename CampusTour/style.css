@@ -65,7 +65,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.menu ul a {
+ ul a {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -77,16 +77,16 @@ body {
   border-radius: 100px;
   transition: 0.3s;
 }
-.menu ul a.active {
+ ul a.active {
   background: #71c9f2;
   color: #000;
 }
-.menu ul a:hover {
+ul a:hover {
   background: #71c9f2;
   color: black;
   box-shadow: rgba(6, 26, 36, 0.758);
 }
-.menu ul:hover>a:not(:hover) {
+ul:hover>a:not(:hover) {
   background: none;
   color: white;
 }
@@ -326,18 +326,10 @@ body {
 
 @media (min-width: 992px) {
   .header {
-    left: 800px;
+    left: 100%;
     top: -15px;
     font-size: 20px;
   }
-
-    
-          
-            
-    
-
-          
-          Expand Down
     
     
   
