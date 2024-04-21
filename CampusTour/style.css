@@ -1,12 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-  
+
   font-family: "Poppins", sans-serif;
 }
 
-.main {
+html,
+body {
   width: 100%;
+  overflow-x: hidden;
+  
+}
+
+.main {
+  width: fit-content;
   height: 100%;
   background-position: center;
   background-size: 100%;
@@ -36,63 +43,57 @@
 
 body {
   background-image: url(images/aotcampus.jpg);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: translate(0%, 0%);
+  
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   animation: slider 20s infinite linear;
 }
 
-.navbar {
- 
-  display: grid;
-  
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+  position: relative;
+  height:89px;
 }
 
+.main{
+  overflow-y: hidden;
+}
 
 .icon img {
-  position: relative;
-  grid-area: 1 / 1 / 2 / 2;
+  width: 150px;
+
 }
 
 .menu {
-  position: absolute;
-
-  grid-area: 2 / 1 / 3 / 5; 
-  justify-self: center;
-}
-
-
- ul {
   display: flex;
-  gap: 20%;
+  gap: 15px;
   justify-content: center;
   align-items: center;
-} 
+}
 
-ul a {
+.menu .a {
   text-decoration: none;
   color: white;
-  font-size: 100%;
-  padding: 3%;
+  padding: 10px;
   border-radius: 100px;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-ul a.active {
+.menu a.active {
   background: #71c9f2;
   color: #000;
 }
- a:hover {
+
+a:hover {
   background-color: #71c9f2;
   color: #000;
   box-shadow: 4px 4px 4px rgba(6, 26, 36, 0.5);
-} 
+}
 
 
 .menu:hover a:not(:hover) {
@@ -100,39 +101,15 @@ ul a.active {
   color: white;
 }
 
-
-.header {
-  color: #fff;
-  position: relative;
-  text-align: center;
-  justify-content: center;
-}
-
-.header h1 {
-  text-align: center;
-  color: #cde2d6;
-}
-
-.header span {
-  color: #cde2d6;
-}
-
-.search {
-  width: 100%;
-  position: relative;
-  grid-area: 1 / 2 / 2 / 5;
-}
-
 .srch {
   font-family: "Times New Roman";
-  max-width: 20%;
+  max-width: 60%;
   background: transparent;
   border: 1px solid #81a3b4;
   color: #f6f2f2;
   padding: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  width: 70%;
   font-size: 14px;
 }
 
@@ -152,13 +129,36 @@ ul a.active {
   border-top-right-radius: 10px;
 }
 
+.search {
+  text-decoration: none;
+  color: white;
+}
+
 .btn:hover {
   background: #71c9f29f;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 34px;
+  margin-top: 60px;
+
+}
+
+.aot {
+  font-weight: bold;
+  font-size: clamp(33px,6vw,55px);
+  text-align: center;
+  width: 99vw;
+}
+
 .content {
-  width: 100%;
-  height: 100%;
+  
+  width: 100vw;
   color: #fff;
   position: relative;
   text-align: center;
@@ -170,15 +170,20 @@ ul a.active {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1.2px;
   line-height: 30px;
+  padding-right: 20px;
 }
 
 .content h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
+  font-size: clamp(30px,7vw,50px);
+  
   padding-left: 20px;
-  margin-top: 9%;
+  margin-top: 40px;
   letter-spacing: 2px;
   text-align: center;
+}
+.Community>h1 {
+  font-size: clamp(25px,7vw,2em);
 }
 
 .content .cn {
@@ -188,6 +193,7 @@ ul a.active {
   font-size: 18px;
   border-radius: 10px;
   transition: 0.4s ease;
+  margin: 25px 0;
 }
 
 .content .cn a {
@@ -202,28 +208,17 @@ ul a.active {
 
 .content span {
   color: #71c9f2;
-  font-size: 65px;
-}
-.Help a{
-  text-decoration: none;
-  position: absolute;
-  background-color: black;
-  color: azure;
-}
-.Help a:hover{
-  background-color: black;
-  color: azure;
-  text-decoration: underline;
+  font-size: clamp(33px,8vw,65px);
 }
 
 .footer {
-  width: 100%;
-  height: 10%;
+  width: 100vw;
   position: absolute;
-  /* Adjusted margin */
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
   justify-content: center;
 }
 
@@ -237,9 +232,12 @@ ul a.active {
   position: relative;
   border: 2px;
   text-align: center;
+  display: flex;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   color: #cde2d6;
+  margin: 50px 0;
 }
 
 .box div {
@@ -248,14 +246,11 @@ ul a.active {
 
 .box img {
   height: 8em;
-  aspect-ratio: 1/1;
-
 }
 
 .social {
   position: relative;
   display: flex;
-  width: 20%;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -266,7 +261,6 @@ ul a.active {
 
 .social img {
   height: 2em;
-  aspect-ratio: 1/1;
 }
 
 .copyright {
@@ -276,257 +270,155 @@ ul a.active {
   color: rgb(238, 232, 221);
 }
 
-@media(width: 540px) {
-  .header {
-    left: 235px !important;
+.helping {
+  width: 100vw;
+  text-align: end;
+  color: white;
+  text-decoration: none;
+}
+.custom-select{
+  height: 0;
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+}
+option{
+  color: black;
+}
+
+@media screen and (max-width:891px) {
+  .menu .a {
+    padding: 5px;
+    font-size: 13px;
   }
-  .Help a{
-    
-    left: 490px !important;
-   
+}
+@media screen and (max-width:736px){
+  .menu .a{
+    font-size: 11px;
+    padding: 4px;
   }
-  .menu {
-    left: 200px !important;
-    
+  .srch{
+    font-size: 11px;
+  }
+  .btn{
+    width: 53px;
+    height: 32px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width:755px) {
+
+  .icon img {
+    width: 115px;
   }
 }
 
-@media(max-width: 767px) {
-  .header {
-    left: 165px;
-    top: -5px;
-  }
-
-  .icon img {
-    width: 60%;
-    height: 65%;
-    grid-area: 1 / 1 / 2 / 2;
-  }
-
-  .search {
-    top: 20px;
-    left: 100px;
-  }
-  .srch{
-    max-width: 50% !important;
-  }
-
-  .menu {
-    left: 130px;
-    top: 95px;
-  }
-
-  .content {
-    left: 50px;
-  }
-
-  .Help a{
-    
-    left: 440px;
-    top: 1460px;
-  }
-
-  .footer {
-    top: 1200px;
-    left: 50px;
-  }
-
-  .Community {
-    top: -50px;
-  }
-
+@media screen and (max-width:513px) {
   .box {
     display: flex;
-    gap: 45px;
+    flex-direction: column;
   }
 
-  .social {
-    display: flex;
-    left: -50px;
-    top: 40px;
-    gap: 50px;
+  .box div {
+    width: 95vw;
+  }
+}
 
+@media screen and (max-width:472px) {
+  .aot {
+
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:319px) {
+  .aot {
+    width: 192px;
+  }
+  .content .par {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .h2 {
+    font-size: 19px;
+  }
+
+  .pp {
+    font-size: 15px;
   }
 
   .copyright {
-    top: 50px;
-    left: 10px;
+    font-size: 14px;
   }
 }
-
-@media (min-width:768px) and (max-width: 991px) {
-  
- 
- html{
-   overflow-x: hidden;
- }
-  .header {
-    left: 310px;
-    top: 15px;
-  }
-
-  .icon img {
-    width: 80%;
-    height: 100px;
-    left: 10px !important;
-    top: 20px;
-    grid-area: 1 / 1 / 2 / 2;
+@media screen and (max-width:638px){
+  .custom-select{
+    visibility: visible;
+    width:65px;
+    position: relative;
+    cursor: pointer;
+    margin-top: -25px;
 
   }
-
-  .search {
-    top: 50px;
-    left: 440px;
-  }
-  .srch{
-    width:13%;
-  }
-
-  .menu {
-    left: 280px;
-    top: 55px;
-  }
-
-  .content {
-    left: -10px;
-  }
-  .Help a{
+  .list{
     text-align: center;
-
-    left: 730px;
-    top: 1380px;
+    background: transparent;
+    color:white;
+    border:1px;
   }
-
-  .footer {
-    top: 1100px;
-    left: 65px;
+  .btn{
+    width: 50px;
+    height: 23px;
   }
-
-  .Community {
-    left: -40px;
+  .a{
+    height: 0;
+    width: 0;
+    position: absolute;
+    visibility: hidden;
   }
-
-  .box {
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  .select-items {
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .menu{
     display: flex;
-    gap: 50px;
-    top: 30px;
-    left: -55px;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
   }
-
-  .social {
-    display: flex;
-    top: 80px;
-    gap: 50px;
-    left: -50px;
+  .srch{
+    padding: 5px;
   }
-
-  .copyright {
-    top: 80px;
-    left: -20px;
-  }
-}
-
-@media(width:912px) {
-  .header {
-    left: 400px !important;
-  }
-}
-
-
-@media (min-width: 992px) {
-   
-  .header {
-    left: 150%;
-    top: -45px;
-    font-size: 20px;
-  }
-  .icon img {
-    width: 80%;
-    height: 160px;
-    left: 70px;
-    top: 20px;
-    grid-area: 1 / 1 / 2 / 2;
-
-  }
-
-  .search {
-    top: 70px;
-    left: 650px;
-  }
-
-  .menu {
-    left: 650px;
-    top: 70px;
-  }
-
-  .content {
-    top: -140px;
-    left: -18px;
-
-  }
-  .Help a{
   
-
-    left: 1400px;
-    top: 1450px;
-  }
-  .footer {
-    top: 1200px;
-    left: 65px;
-  }
-
-  .Community {
-    left: -80px;
-  }
-
-  .box {
-    display: flex;
-    gap: 50px;
-    top: 30px;
-    left: -85px;
-  }
-
-  .social {
-    display: flex;
-    top: 80px;
-    gap: 50px;
-    left: -50px;
-  }
-
-  .copyright {
-    top: 80px;
-    left: -60px;
-  }
 }
-@media(width:1024px){
-  .icon img {
-   
-    left: 40px !important;
-   }
-  .menu {
-    left: 350px;
-    top: 70px;
+@media screen and (max-width:454px){
+  .menu{
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .search {
-    top: 70px !important;
-    left: 450px !important;
+  .submenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
   }
-  .Help a{
-    left: 800px !important;
-   }
+  .custom-select{
+    margin-top: -30px;
+  }
+  .srch{
+    max-width: 45%;
+  }
+
 }
-@media(width:1280px){
-  
-  .menu {
-    left: 500px;
-    top: 70px;
-  }
-  .search {
-    top: 70px !important;
-    left: 550px !important;
-  }
-  .Help a{
-    left: 1000px!important;
-   
+@media screen and (max-width:354px){
+  .icon img{
+    width:90px;
   }
 }
